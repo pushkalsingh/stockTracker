@@ -1,0 +1,71 @@
+ /* Basic styling for the dropdown */
+  .search select {
+    position: absolute;
+    width: calc(100% - 10px);
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    background-color: white;
+    z-index: 10;
+    margin-top: 5px;
+  }
+
+  .search select option {
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  .search select option:hover {
+    background-color: #f0f0f0;
+  }
+
+.body {
+  font-size: 12px;
+  font-family: 'Courier New', Courier, monospace;
+  margin : 10px 10px;
+}
+
+mat-form-field {
+  font-size: 0.875rem; 
+  font-family: 'Courier New', Courier, monospace;
+  height: auto ;
+}
+
+mat-form-field mat-label {
+  font-size: 0.875rem; 
+  font-family: 'Courier New', Courier, monospace;
+  height: auto ;
+}
+
+mat-select {
+  font-size: 0.5 rem; /* 14px */ 
+  line-height: 1 rem; /* 20px */
+  font-family: 'Courier New', Courier, monospace;  
+}
+
+mat-option {
+  font-size: 0.5 rem; /* 14px */ 
+  line-height: 1 rem; /* 20px */
+  font-family: 'Courier New', Courier, monospace; 
+}
+
+.inputForSelect {
+  font-size: 0.875rem; 
+  font-family: 'Courier New', Courier, monospace;
+  height: 50px ;
+}
+
+.submitButton {
+  font-size: 0.875rem; 
+  font-family: 'Courier New', Courier, monospace;
+  height: 55px ;
+}
+
+.formClass {
+  font-size: 0.875rem; 
+  font-family: 'Courier New', Courier, monospace;
+  height: auto;
+  background-color:cornflowerblue;
+  display: flex;
+  justify-content: center;
+}

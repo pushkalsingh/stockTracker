@@ -1,0 +1,42 @@
+.dataPresen {
+    margin: 0 auto;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+    
+.summary {
+    margin: 0 auto;
+    background-color: blanchedalmond;
+}
+
+mat-label {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.dataForStock {
+    margin: 0 auto;
+    background-color:burlywood;
+}
+
+.cenHead:nth-child(even) {
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: azure;
+}
+
+.cenHead:nth-child(odd) {
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color:beige;
+}
+
+.firstRow {
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: burlywood;
+}
+
+.elementData {
+    margin-top: 10px;
+}

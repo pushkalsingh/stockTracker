@@ -1,0 +1,96 @@
+<div class="dataPresen">
+    <div class="summary">
+        <h3>
+            Last One Week
+        </h3>
+        <div><span>
+                <mat-label>Range:</mat-label> {{rangeVariation | number:'1.0-0' }}
+            </span>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <span>
+                <mat-label>Average Price:</mat-label> {{averagePrice | currency:'INR'}}
+            </span>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <span>
+                <mat-label>Average Volume:</mat-label> {{averageVolume | number:'1.0-0'}}
+            </span>
+        </div>
+    <br>
+        <div>
+            <h3>
+                Dividend Information
+            </h3>
+            <div>
+                <span>
+                    Last Dividend: {{dividendInfo[0].dividend }}
+                </span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span>
+                    Dividend date: {{dividendInfo[0].date | date: 'fullDate' }}
+                </span>
+            </div>
+        </div>
+        <br>
+        <div>
+            <h3>
+                Intra Day
+            </h3>
+            <div>
+                <span>
+                    Date : {{intraDay.date | date: 'fullDate' }}
+                </span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span>
+                    Symbol: {{intraDay.symbol }}
+                </span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span>
+                    Exchange: {{intraDay.exchange }}
+                </span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span>
+                    Open: {{intraDay.open }}
+                </span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span>
+                    High: {{intraDay.high }}
+                </span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span>
+                    Low: {{intraDay.low }}
+                </span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span>
+                    Close: {{intraDay.close }}
+                </span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span>
+                    Volume: {{intraDay.volume }}
+                </span>
+            </div>
+        </div>
+        <br>
+    </div>
+    <div class="dataForStock">
+    @for (oneData of sevenDaysData; track oneData){
+    <div class="cenHead">
+        @if($index===0){
+        <h3 class="firstRow">Symbol: {{oneData.symbol}}</h3>
+        }
+        <br>
+        <div class="elementData">
+            <p>Sn.No: {{$index+1}}
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <span>Date: {{oneData.date | date: 'fullDate'}}
+            </span>
+        </p>
+        <p> <span>Closing Price: {{oneData.close | currency:'INR'}}</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <span>Volume: {{oneData.volume}}</span>
+        </p>
+        <br>
+        </div>
+    </div>
+    }     
+    </div>
+</div>
